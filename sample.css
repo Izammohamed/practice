@@ -1,0 +1,80 @@
+.cover {
+
+    background-image: url("img/Cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.content {
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.heading_one {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+    color: white;
+
+    /* mobile screen  */
+    @media screen and (max-width: 992px) {
+        color: yellowgreen;
+    }
+
+    /* tablet screen  */
+    @media screen and (min-width: 992px) and (max-width: 1366px) {
+        color: red;
+    }
+}
+
+.heading_two {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: white;
+
+    /* mobile screen  */
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+
+    /* tablet screen  */
+    @media screen and (min-width: 992px) and (max-width: 1336px) {
+        display: block;
+    }
+}
+
+.button {
+    border-radius: 6px;
+    color: white;
+    background-color: #fd0000;
+    width: 155px;
+    height: 39px;
+}
+
+.global_break {
+    padding-top: 20px;
+}
+
+.card_inner_section {
+    padding: 5% 25% 5% 35%;
+}
+
+.img_styles {
+    width: 478px;
+    height: 155px;
+}
+
+.heading {
+    font-size: 30px;
+    color: red;
+    font-weight: 400;
+}
+
+.paragragh {
+    font-size: 15px;
+    color: #252424;
+    font-weight: 400;
+}
+
