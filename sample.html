@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>Sample</title>
@@ -17,7 +18,7 @@
       <!-- contents -->
       <div class="content">
         <!-- header 1 -->
-        <h1 class="heading_one" id="heading">Welcome To AIO-IT Tutoring</h1>
+        <h1 class="heading_one" id="heading"></h1>
 
         <!-- heading 2 -->
         <span class="heading_two" id="sub_heading">1 st Day Session</span>
@@ -27,7 +28,13 @@
         <div class="pt-1"></div>
 
         <!-- button -->
-        <button class="btn btn-danger button" id="button">Click Here</button>
+        <button
+          class="btn btn-danger button"
+          id="button"
+          onclick="testFunction()"
+        >
+          Click Here
+        </button>
 
         <div class="pt-5"></div>
 
@@ -35,7 +42,7 @@
         <div class="card">
           <div class="card_inner_section">
             <!-- image -->
-            <img src="images/Butterfly.png" class="img_styles" />
+            <img src="D:\aio-it solutions\jspractical\AIO-ITCOURSE0B4Intake02Html-JsPracticles\img\Butterfly.png" class="img_styles" />
 
             <div class="pt-3"></div>
             <!-- heading -->
@@ -54,16 +61,25 @@
             >
           </div>
         </div>
+
+        <div class="pt-4"></div>
+        <!-- example input -->
+        <label>Example Input</label>
+        <input type="text" id="input1" value="value" oninput="getInputData()" />
+        <button
+          class="btn btn-danger button"
+          id="button"
+          onclick="getInputData()"
+        >
+          Click Here
+        </button>
       </div>
+      <div class="pt-4"></div>
     </div>
     <!-- ending the content -->
   </body>
 </html>
 
-<<<<<<< HEAD
-</html>
-<!-- end of the section  -->
-=======
 <!-- end of the section -->
 
 <!-- start javascript -->
@@ -82,7 +98,248 @@
   document.getElementById("sub_heading").style.color = "green";
 
   document.getElementById("button").style.backgroundColor = "green";
+
+  // javascript out puts
+
+  // document.write
+  document.write("output");
+
+  // window alert
+
+  // window.alert("output");
+
+  // console.log
+
+  console.log("output in the console");
+  console.log(2 + 2);
+
+  // usage
+  // javascript variables
+  // declair variable using var
+  var a = "hello123";
+
+  console.log(a);
+  console.log(a);
+  console.log(a);
+  console.log(a);
+  console.log(a);
+
+  //
+
+  var b;
+  b = "hello";
+  console.log(b);
+  // declair using two lines = posible
+
+  //
+  var a = "hay1234";
+
+  console.log(a);
+
+  // re declair variable = posible
+
+  //
+
+  b = "text3456";
+
+  console.log(b);
+  // re assign variable = posible
+
+  //
+
+  console.log(this.b);
+  // declair using this = posible
+
+  // declair using let
+
+  let c;
+  c = "letexample";
+  console.log(c);
+  // declair using two lines  = posible
+
+  //
+
+  // let c = 'example' -> error
+  // re declair using let = not posible
+
+  //
+
+  c = "letexample345";
+  console.log(c);
+
+  // re assign using let = posible
+
+  //
+
+  console.log(this.c);
+
+  // using this = not posible
+
+  // decair using const
+
+  //  const d;
+  //  d = "constexample"
+  //  console.log(d); -> error
+
+  // declair and assign using two lines = not posible
+
+  //
+
+  const s = "constexample1";
+
+  // const s = 'eertyu'; -> error
+
+  // redeclair using const  = not possible
+
+  //
+
+  // s = "newvalue";
+  // console.log(s); -> error
+  // reassign using const = not posible
+
+  //
+
+  console.log(this.s);
+  // acces const variable using this this keyword = not possible
+
+  //
+  // * inputs handling
+
+  // // assign the value
+  // document.getElementById("input1").value = "newvalue1";
+
+  // // read the value
+  // const inputval = document.getElementById("input1").value;
+
+  // console.log(inputval);
+
+  // data types
+
+  // string
+
+  const value = "value1jhg7087./00.";
+
+  // interger /number
+
+  const number1 = 30;
+
+  // float
+
+  const float1 = 12.9;
+
+  // double
+
+  const double1 = 12.9;
+
+  // boolean
+
+  const bool1 = true;
+
+  // functions
+
+  // test
+  function testFunction() {
+    console.log("test function");
+  }
+
+  // get input box data
+  function getInputData() {
+    // read the input value
+    const inputvalue2 = document.getElementById("input1").value;
+    console.log(inputvalue2);
+  }
+  
+  
+  //objects and operations
+  
+  
+  const age =20;
+  const name ='izam';
+  const haie_color ='red';
+
+
+  //user object(propertis)
+  const userobjet={
+    name : name,
+    age : age,
+    haie_color : haie_color
+  };
+
+//new obj
+const obj={
+  key1 :'value1',
+  key2 :'value2',
+  key3 :'value3',
+  key4 :{
+    key1 :'value1',
+    key2 :'naji',
+  }
+}
+
+
+
+
+
+
+
+
+  //get user data
+
+  console.log(userobjet.name);
+
+  //get new obj data
+
+  console.log(obj.key4.key2);
+
+
+
+
+
+
+
+  
+
+  //  // switch statements
+  // const a1 = 8;
+
+  // switch (a1) {
+  //   case 5:
+  //     console.log(a);
+  //     break;
+  //   case 8:
+  //     console.log("hay");
+  //     break;
+  //   default:
+  //     console.log("hay222");
+  // }
+  //   function returnPromise() {
+  //   let myPromise = new Promise(function (myResolve, myReject) {
+  //     let x = 1;
+
+  //     if (x == 1) {
+  //       setTimeout(() => {
+  //         myResolve("OK");
+  //       }, 2000);
+  //     } else {
+  //       setTimeout(() => {
+  //         myReject("Error");
+  //       }, 2000);
+  //     }
+  //   });
+
+  //   return myPromise;
+  // }
+
+  // async function asynccall() {
+  //   const res = await returnPromise();
+  //   console.log(res);
+  // }
+
+  // function execute() {
+  //   asynccall();
+  //   testFun();
+  //   testFun2();
+  // }
 </script>
 
 <!-- end of the script -->
->>>>>>> Disna
