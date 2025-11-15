@@ -292,25 +292,157 @@ const obj={
   console.log(obj.key4.key2);
 
 
+  //operations
+
+  const num1=10;
+  const num2=30;
+  const num3=5;
+
+  //addition
+  console.log(num1+num2);
+
+  //subtraction
+  console.log(num1-num2);
+
+  //multiplication
+  console.log(num1*num2);
+
+  //divition
+  console.log(num1/num2);
+
+  //breakets
+
+  console.log((num1 * num2) -num1);
+
+   // arrrys
+
+  // simple string
+  const userArray = ["user1", "user2", "user3", "user4"];
+
+  console.log(userArray[3]);
+
+  const carArray = ["car1", "car2", "car3"];
+
+  console.log(carArray[2]);
+
+  // object arrays
+  const userObjectArray = [
+    {
+      name: "test",
+      age: 30,
+      hair_color: "red",
+      childarray: ["elemant1", "elemant2", "elemant3"],
+    },
+    {
+      name: "test1",
+      age: 30,
+      hair_color: "red",
+      childarray: ["elemant1", "elemant2", "elemant3"],
+    },
+    {
+      name: "test2",
+      age: 30,
+      hair_color: "red",
+      childarray: ["elemant1", "elemant2", "elemant3"],
+    },
+    {
+      name: "test3",
+      age: 30,
+      hair_color: "red",
+      childarray: ["elemant1", "elemant2", "elemant3"],
+    },
+  ];
 
 
 
+  console.log(userObjectArray[0].name);
+
+  console.log(userObjectArray[3].childarray[2]);
+
+  // browser storages
+  // local storage
+
+  // add item to local storage
+  localStorage.setItem('key1' , 'test')
+
+  // get data from the localstorage
+
+  console.log(localStorage.getItem('key1'))
+
+  // remove item from the local storage
+
+  localStorage.removeItem('key1');
+
+  // session storage
+
+  // add item to session storage
+  sessionStorage.setItem('key1' , 'test');
 
 
-  
+  // get data from the session storage
 
-  //  // switch statements
-  // const a1 = 8;
+  console.log(sessionStorage.getItem('key1'))
 
-  // switch (a1) {
-  //   case 5:
-  //     console.log(a);
-  //     break;
-  //   case 8:
-  //     console.log("hay");
-  //     break;
-  //   default:
-  //     console.log("hay222");
+  // remove item from the sessiom storage
+
+  sessionStorage.removeItem('key1');
+
+
+  const x = 10;
+  const y = 5;
+  const z = "10";
+  const k = "5";
+
+  // example 1
+  if (x / y == 2) {
+    console.log("yes");
+  }
+
+  if (x - y == 5) {
+    console.log("correct");
+  } else {
+    console.lg("no");
+  }
+
+  // example 2
+
+  if (x === z) {
+    console.log(x);
+  } else if (y === k) {
+    console.log(y);
+  } else if (x == z) {
+    console.log(z);
+  } else {
+    console.log("no results");
+  }
+
+  // example 3
+  if (x < y) {
+    console.log(x);
+  } else if (x - y > y) {
+    console.log(y);
+  } else if (x - y >= y) {
+    console.log(y);
+  } else {
+    console.log("no results ");
+  }
+
+
+
+  // switch statements
+  const a1 = 8;
+
+  switch (a1) {
+    case 5:
+      console.log(a);
+      break;
+    case 8:
+      console.log("hay");
+      break;
+    default:
+      console.log("hay222");
+  }
+
   // }
   //   function returnPromise() {
   //   let myPromise = new Promise(function (myResolve, myReject) {
